@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="API Test Automation">
+<listeners>
+	<listener class-name = "com.trello.qa.Analyzer.Transformer"/>
+	<listener class-name = "com.qa.ExtentReportListener.ExtentReporterNG"/>
+	
+</listeners>
+  <test name="Test">
+    <classes>
+  <!--  <class name="com.trello.UI.API.testcases.SeleniumAndAPITestcases"/>
+  	 <class name="com.trello.selenium.testcases.SeleniumUIAutomationTestcases"/>  -->
+     <class name="com.trello.API.testcases.RestAssuredAPITestcases"/>
+    
+     
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
